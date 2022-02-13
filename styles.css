@@ -135,9 +135,6 @@
 
   }
   
-  .secondary-border {
-    border-color: var(--tertiary-color);
-  }
   /* SECTION TITLE STYLES END */
   
   /* WHAT WE DO STYLES */
@@ -170,11 +167,12 @@
   /* Projects */
   .projects { 
     background: #39a6b2;
+    font: #fff;
   }
 
   .other-title {
     font-size: 48px;
-    color: var(--secondary-color);
+    color: #160457;
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -200,9 +198,6 @@
     background-color: #160457;
   }
   
-  .contact h2 {
-    color: var(--primary-color);
-  }
   
   .contact-info {
     display: flex;
