@@ -9,13 +9,6 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
-  :root {
-    --primary-color: #fce138;
-    --secondary-color: #024e76;
-    --tertiary-color: #39a6b2;
-  }
-  
-  
   /* HEADER / NAV BAR STYLES START */
   
   header {
@@ -78,9 +71,8 @@
   /* FOOTER STYLES START */
   footer {
     background: #39a6b2;
-    padding: 40px 35px;
+    padding: 20px 35px;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
   }
@@ -131,13 +123,16 @@
   
   
   /* SECTION TITLE STYLES START */
-  .section-title {
+
+
+  .first-title {
     font-size: 48px;
     color: var(--secondary-color);
     padding-bottom: 20px;
     text-align: right;
     margin: 0 auto 35px auto;
     width: 50%;
+
   }
   
   .secondary-border {
@@ -158,72 +153,40 @@
     display: flex;
     line-height: 1.7;
     color: var(--tertiary-color);
-    width: 80%;
     font-size: 20px;
     text-align: center;
     flex: 1;
-  }
-  /* WHAT YOU DO STYLES END */
-  
-  
-  /* WHAT YOU DO STYLES START */
-  .steps { 
-    background: #39a6b2;
   }
 
   .me {
     margin: 50px auto;
     padding-bottom: 50px;
-    width: 900px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+  }
+  /* About me */
+  
+  
+  /* Projects */
+  .projects { 
+    background: #39a6b2;
   }
 
-  .me p {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
-  
-  .step {
-    margin: 50px auto;
-    padding-bottom: 50px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .step h3 {
+  .other-title {
+    font-size: 48px;
     color: var(--secondary-color);
-    font-size: 46px;
-    flex: 1 30%;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
   }
-  
-  .step-info {
-    flex: 2 70%;
+
+  .that1 img {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    max-width: 400px;
   }
   
-  
-  .step-text {
-    flex: 12;
-  }
-  
-  .step-text p {
-    color: var(--tertiary-color);
-    font-size: 18px;
-  }
-  
-  .step-text h4 {
-    font-size: 26px;
-    line-height: 1.5;
-    color: var(--secondary-color);
-  }
   
   /* WHAT YOU DO STYLES END */
   
@@ -263,6 +226,10 @@
   .contact-info h3 {
     color: #39a6b2;
     font-size: 32px;
+  }
+
+  .contact-info h4 {
+    color: #39a6b2;
   }
   
   .contact-info p, .contact-info address {
@@ -394,23 +361,23 @@
       margin-right: 0;
       margin-top: 15px;
       margin-bottom: 15px;
-      
-    }
-    .me img {
-      flex: 0 32%;
-      margin-right: 0;
-      margin-top: 15px;
-      margin-bottom: 15px;
     }
   
     .step-text {
       flex: 100%;  
     }
 
-    .me p, .about-me p {
-      flex: 2 100%;
+   .about-me p {
+      flex: 100%;
       justify-content: center;
       text-align: center;
+    }
+
+    .me {
+      flex: 100%;
+      justify-content: center;
+      text-align: center;
+
     }
   
   }
