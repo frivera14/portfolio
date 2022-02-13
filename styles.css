@@ -78,7 +78,7 @@
   }
   
   footer h2 {
-    color: var(--secondary-color);
+    color: #160457;
     font-size: 30px;
     margin: 0;
   }
@@ -179,20 +179,34 @@
     width: 50%;
   }
 
-  .that1 img {
+  .that1 {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 400px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .that1 img {
+    align-items: center;
+    max-width: 550px;
+    justify-content: center;
+    display: flex;
+  }
+
+  .project-description {
+    display: flex;
+    line-height: 1.7;
+    color: #160457;
+    font-size: 20px;
+    text-align: center;
+    flex: 2 100%;
+    justify-content: center;
   }
   
   
-  /* WHAT YOU DO STYLES END */
+  /* Projects sec end */
   
   
-  /* REACH OUT STYLES START */
-  .contact {
-    background: var(--secondary-color);
-  }
+  /* Contact */
 
   .contact-me {
     background-color: #160457;
@@ -210,9 +224,6 @@
     margin: 15px;
   }
   
-  .contact-info iframe {
-    height: 400px;
-  }
   
   .contact-info div {
     color: white;
@@ -235,11 +246,9 @@
   }
   
   .contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -268,16 +277,9 @@
   }
   
   
-  /* REACH OUT STYLES END */
+  /* Project */
   
-  /* UTILITIES */
-  .text-left {
-    text-align: left;
-  }
-  
-  .text-right {
-    text-align: right;
-  }
+  /* Other */
   
   .titles {
     display: flex;
@@ -319,18 +321,7 @@
     .starter-text {
       text-align: center;
     }
-  
-    .section-title {
-      width: 80%;
-    }
     
-    .trainer {
-      flex: 0 70%;
-    }
-    
-    .contact-info iframe{
-      flex: 1 100%;
-    }
   }
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
@@ -340,26 +331,11 @@
       padding: 30px 15px;
     }
   
-    .step h3 {
-      flex: 1 100%;
-      text-align: center;
-    }
-  
-    .step-info {
-      flex: 2 100%;
-      text-align: center;
-      justify-content: center;
-    }
-  
     .about-me img {     
       flex: 0 32%;
       margin-right: 0;
       margin-top: 15px;
       margin-bottom: 15px;
-    }
-  
-    .step-text {
-      flex: 100%;  
     }
 
    .about-me p {
@@ -378,14 +354,6 @@
   }
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
-  
-    .hero-form button {
-      width: 100%;
-    }
-  
-    .section-title {
-      width: 95%;
-    }
   
     .intro p {
       width: 100%;
