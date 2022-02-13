@@ -6,7 +6,7 @@
   
   body {
     color: #39a6b2;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   :root {
@@ -20,7 +20,6 @@
   
   header {
     padding: 10px 35px;
-    background-color: var(--tertiary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -78,7 +77,7 @@
   
   /* FOOTER STYLES START */
   footer {
-    background: var(--primary-color);
+    background: #39a6b2;
     padding: 40px 35px;
     display: flex;
     justify-content: space-between;
@@ -91,15 +90,7 @@
     font-size: 30px;
     margin: 0;
   }
-  
-  footer div {
-    line-height: 1.5;
-    text-align: right;
-  }
-  
-  footer a {
-    color: var(--secondary-color);
-  }
+
   /* END FOOTER STYLES */
   
   /* STYLE ALL SECTION TAGS */
@@ -108,7 +99,7 @@
   }
   
   /* HERO STYLES START */
-  .hero {
+  .starter {
     background-image: url('introbck.png');
     background-size: cover;
     background-position: center;
@@ -117,10 +108,10 @@
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 100%;
   }
   
-  .hero-cta {
+  .starter-text {
     width: 75%;
     text-align: left;
     margin: 3.5%;
@@ -129,17 +120,11 @@
     line-height: 1.2;
   }
   
-  .hero-cta h2 {
+  .starter-text h2 {
     font-style: italic;
     font-size: 55px;
     color: rgb(81, 214, 192);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-  
-  .hero-form {
-    display: flex;
-    width: 250px;
-    height: 250px;
   }
   
   /* HERO STYLES END */
@@ -148,16 +133,11 @@
   /* SECTION TITLE STYLES START */
   .section-title {
     font-size: 48px;
-    border-bottom: 3px solid;
     color: var(--secondary-color);
     padding-bottom: 20px;
-    text-align: center;
+    text-align: right;
     margin: 0 auto 35px auto;
     width: 50%;
-  }
-  
-  .primary-border {
-    border-color: var(--primary-color);
   }
   
   .secondary-border {
@@ -166,40 +146,54 @@
   /* SECTION TITLE STYLES END */
   
   /* WHAT WE DO STYLES */
-  
-  .intro p {
+
+  .about-me img {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 20px;
+    max-width: 350px;
+  }
+
+  .about-me p {
+    display: flex;
     line-height: 1.7;
     color: var(--tertiary-color);
     width: 80%;
-    margin: 0 auto;
     font-size: 20px;
     text-align: center;
+    flex: 1;
   }
   /* WHAT YOU DO STYLES END */
   
   
   /* WHAT YOU DO STYLES START */
   .steps { 
-    background: var(--primary-color);
+    background: #39a6b2;
+  }
+
+  .me {
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .me p {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
   }
   
   .step {
     margin: 50px auto;
     padding-bottom: 50px;
     width: 80%;
-    border-bottom: 1px solid var(--tertiary-color);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-  }
-  
-  .step:last-child {
-    border-bottom: none;
-  }
-  
-  .step:nth-child(even) {
-    border-bottom: 1px solid var(--tertiary-color);
   }
   
   .step h3 {
@@ -215,14 +209,6 @@
     align-items: center;
   }
   
-  .step-img {
-    flex: 1 12%;
-    margin-right: 20px;
-  }
-  
-  .step-img img {
-    max-width: 100%;
-  }
   
   .step-text {
     flex: 12;
@@ -241,49 +227,14 @@
   
   /* WHAT YOU DO STYLES END */
   
-  /* MEET THE TRAINERS START */
-  .trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .trainer {
-    margin: 20px;
-    flex: 1;
-    background: var(--secondary-color);
-    color: var(--primary-color);
-  }
-  
-  .trainer img {
-    width: 100%;
-  }
-  
-  .trainer-bio {
-    padding: 25px;
-    line-height: 1.3;
-  }
-  
-  .trainer-bio h3 {
-    font-size: 28px;
-  }
-  
-  .trainer-bio h4 {
-    font-weight: lighter;
-    font-size: 22px;
-    margin-bottom: 15px;
-  }
-  
-  .trainer-bio p {
-    font-size: 17px;
-  }
-  /* TRAINER STYLES END */
   
   /* REACH OUT STYLES START */
   .contact {
     background: var(--secondary-color);
+  }
+
+  .contact-me {
+    background-color: #160457;
   }
   
   .contact h2 {
@@ -310,7 +261,7 @@
   }
   
   .contact-info h3 {
-    color: var(--primary-color);
+    color: #39a6b2;
     font-size: 32px;
   }
   
@@ -330,7 +281,6 @@
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
-    border-radius: 10px;
     background-color: rgba(255,255,255, .75);
     outline: none;
   }
@@ -344,21 +294,15 @@
   .contact-form button {
     width: 100%;
     border: none;
-    background: var(--primary-color);
+    background: #39a6b2;
     color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
-    border-radius: 10px;
-  }
-  
-  .contact-form button:hover {
-    color: var(--primary-color);
-    background: var(--tertiary-color);
   }
   
   .contact-info a {
-    color: var(--primary-color);
+    color: #39a6b2;
   }
   
   
@@ -373,8 +317,10 @@
     text-align: right;
   }
   
-  .flex-row {
+  .titles {
     display: flex;
+    flex-wrap: wrap;
+    text-align: right;
   }
   
   @media screen and (max-width: 980px) {
@@ -404,11 +350,11 @@
       width: 100%;
     }
   
-    .hero-cta, .hero-form {
+    .starter-text { 
       width: 100%;
     }
     
-    .hero-cta {
+    .starter-text {
       text-align: center;
     }
   
@@ -443,7 +389,14 @@
       justify-content: center;
     }
   
-    .step-img {
+    .about-me img {     
+      flex: 0 32%;
+      margin-right: 0;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      
+    }
+    .me img {
       flex: 0 32%;
       margin-right: 0;
       margin-top: 15px;
@@ -452,6 +405,12 @@
   
     .step-text {
       flex: 100%;  
+    }
+
+    .me p, .about-me p {
+      flex: 2 100%;
+      justify-content: center;
+      text-align: center;
     }
   
   }
