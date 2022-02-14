@@ -174,9 +174,9 @@
     font-size: 48px;
     color: #160457;
     padding-bottom: 20px;
-    text-align: center;
     margin: 0 auto 35px auto;
     width: 50%;
+    flex: 0;
   }
 
   .that1 {
@@ -190,6 +190,7 @@
     max-width: 550px;
     justify-content: center;
     display: flex;
+    width: 100%;
   }
 
   .project-description {
@@ -358,11 +359,7 @@
     .intro p {
       width: 100%;
     }
-  
-    .trainer {
-      flex: 0 100%;
-    }
-  
+
     .contact-info {
       text-align: center;
     }
@@ -374,4 +371,8 @@
     .contact-form {
     order: 3;
   }
+
+  .projects {
+    padding: 30px 15px;
   }
+}
