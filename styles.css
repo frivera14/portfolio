@@ -91,7 +91,7 @@
   
   /* Intro-starter */
   .starter {
-    background-image: url('introbck.png');
+    background-image: url("introbck.png");
     background-size: cover;
     background-position: center;
     display: flex;
