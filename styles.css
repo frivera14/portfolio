@@ -157,13 +157,13 @@
   
   /* Projects */
   .projects { 
-    background: #39a6b2;
+    background: #fff;
     font: #fff;
   }
 
   .other-title {
     font-size: 48px;
-    color: #160457;
+    color: var(--secondary-color);
     padding-bottom: 20px;
     margin: 0 auto 35px auto;
     width: 50%;
@@ -187,7 +187,7 @@
   .project-description {
     display: flex;
     line-height: 1.7;
-    color: #160457;
+    color: var(--secondary-color);
     font-size: 20px;
     text-align: center;
     flex: 2 100%;
@@ -236,33 +236,6 @@
     line-height: 1.5;
     font-size: 16px;
     font-style: normal;
-  }
-  
-  .contact-form input, .contact-form textarea {
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    width: 100%;
-    margin-bottom: 15px;
-    margin-top: 5px;
-    background-color: rgba(255,255,255, .75);
-    outline: none;
-  }
-  
-  .contact-form input:focus, .contact-form textarea:focus {
-    background-color: rgba(255,255,255, 1);
-    outline: none;
-  }
-  
-  
-  .contact-form button {
-    width: 100%;
-    border: none;
-    background: #39a6b2;
-    color: var(--secondary-color);
-    text-align: center;
-    padding: 15px 0;
-    font-size: 16px;
   }
   
   .contact-info a {
