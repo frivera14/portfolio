@@ -27,7 +27,7 @@
     z-index: 9999; 
   }
   
-  header h1 {
+  header h2 {
     font-weight: bold;
     margin: 0;
     font-size: 36px;
@@ -133,7 +133,6 @@
   .about-me img {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 20px;
     max-width: 350px;
   }
 
