@@ -265,6 +265,11 @@
       text-align: center;
 
     }
+
+    img {
+      margin-top: 0;
+      padding-top: 0;
+    }
   
   }
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
