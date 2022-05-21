@@ -12,7 +12,7 @@
   /* Header */
   
   header {
-    padding: 10px 35px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -245,7 +245,10 @@
   
   /* MEDIA QUERY FOR TABLETS AND SMALLER */
   @media screen and (max-width: 768px) {
-  
+    header {
+      padding: 0px;
+    }
+
     .about-me img {     
       flex: 0 32%;
       margin-right: 0;
@@ -274,6 +277,9 @@
   }
   /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
   @media screen and (max-width: 575px) {
+    header {
+      padding: 0px;
+    }
   
     .intro p {
       width: 100%;
